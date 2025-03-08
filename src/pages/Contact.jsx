@@ -3,7 +3,7 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 const Contact = () => {
   return (
     <div className="bg-gray-100">
-      {/* Hero Section */}
+    
       <section className="relative bg-blue-600 text-white py-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -15,10 +15,10 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Details Section */}
+     
       <section className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
+         
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Contact Details</h2>
             <p className="text-gray-600 mb-6">
@@ -27,20 +27,20 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-700">
                 <FiMapPin className="text-blue-600 text-xl" />
-                <span>123 Fashion Street, Accra, Ghana</span>
+                <span>Dubai, UAE</span>
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <FiPhone className="text-blue-600 text-xl" />
-                <span>+233 24 567 8901</span>
+                <span>+971529824652 | +19046662804</span>
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <FiMail className="text-blue-600 text-xl" />
-                <span>info@fashionhub.com</span>
+                <span>support@Houseofthreads.com</span>
               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
+   
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
             <form className="space-y-4">
