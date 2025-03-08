@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <div className="bg-gray-100">
     
-      <section className="relative bg-blue-600 text-white py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
+      <section className="relative bg-blue-600 text-white  py-20 px-6 text-center">
+        <div className="max-w-3xl mx-auto mt-20">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Get in Touch with Us
           </h1>
