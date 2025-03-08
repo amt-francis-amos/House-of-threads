@@ -45,7 +45,7 @@ const Home = () => {
                   Elevate Your Style
                 </motion.h1>
                 <motion.p
-                  className="text-xl mb-6 shadow-md"
+                  className="text-xl mb-6"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3, duration: 0.8 }}
