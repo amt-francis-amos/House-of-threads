@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
-import { products } from "../assets/assets";
+import { assets, products } from "../assets/assets";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useCart } from "../context/CartContext"; // Import useCart
+import { useCart } from "../context/CartContext"; 
 
 const Shop = () => {
   const { category } = useParams();
-  const { addToCart } = useCart(); // Get addToCart function from context
+  const { addToCart } = useCart(); 
 
   const filteredProducts = category
     ? products.filter((product) => product.category.toLowerCase() === category.toLowerCase())
@@ -14,13 +14,13 @@ const Shop = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+     
       <motion.div 
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8 }} 
         className="relative bg-cover bg-center h-[300px] md:h-[400px] flex items-center justify-center"
-        style={{ backgroundImage: "url('/path-to-your-hero-image.jpg')" }} // Change to actual image path
+        style={{ backgroundImage: `url(${assets.shopImg})` }} 
       >
         <div className="bg-black bg-opacity-50 text-white text-center p-6 rounded-lg">
           <h1 className="text-4xl md:text-5xl font-bold">
