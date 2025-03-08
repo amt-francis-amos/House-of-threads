@@ -4,18 +4,19 @@ import { Link } from "react-router-dom";
 
 const CategoryPage = () => {
   const { category } = useParams();
+  const formattedCategory = category.replace(/-/g, " "); // Convert URL format back to normal
 
-  if (!category) {
-    return <div className="text-center text-red-500 text-lg py-10">Category not found.</div>;
-  }
+  console.log("Selected category:", formattedCategory);
 
   const filteredProducts = products.filter(
-    (product) => product.category && product.category.toLowerCase() === category.toLowerCase()
+    (product) => product.category && product.category.toLowerCase() === formattedCategory.toLowerCase()
   );
+
+  console.log("Filtered products:", filteredProducts);
 
   return (
     <div className="container mx-auto py-10 px-6">
-      <h2 className="text-3xl font-bold text-center mb-6">{category.toUpperCase()}</h2>
+      <h2 className="text-3xl font-bold text-center mb-6">{formattedCategory.toUpperCase()}</h2>
       {filteredProducts.length === 0 ? (
         <p className="text-center text-gray-500">No products available in this category.</p>
       ) : (
