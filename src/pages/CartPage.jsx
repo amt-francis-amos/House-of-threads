@@ -8,7 +8,7 @@ const CartPage = () => {
 
   return (
     <div>
-      {/* Banner Section */}
+      {/* Hero Section */}
       <div
         className="relative bg-cover bg-center h-[300px] md:h-[400px] flex items-center justify-center text-white text-center"
         style={{ backgroundImage: `url(${assets.cartImg})` }}
@@ -37,7 +37,8 @@ const CartPage = () => {
                 />
                 <div className="ml-4 flex-1">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
-                  <p className="text-gray-600">${item.price.toFixed(2)}</p>
+                  {/* ✅ Fixed price calculation to prevent `toFixed` errors */}
+                  <p className="text-gray-600">${(Number(item.price) || 0).toFixed(2)}</p>
                   <div className="flex items-center gap-2 mt-2">
                     <button
                       onClick={() => decreaseQuantity(item.id)}
@@ -69,7 +70,8 @@ const CartPage = () => {
         {cart.length > 0 && (
           <div className="mt-8 p-6 bg-gray-100 rounded-lg shadow-md text-center">
             <h3 className="text-xl font-semibold">
-              Total: ${getTotalPrice().toFixed(2)}
+              {/* ✅ Fixed total price calculation */}
+              Total: ${(Number(getTotalPrice()) || 0).toFixed(2)}
             </h3>
             <Link to="/checkout">
               <button className="mt-4 px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700">
