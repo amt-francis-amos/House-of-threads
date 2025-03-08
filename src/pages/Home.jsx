@@ -23,7 +23,7 @@ const staggerContainer = {
 const Home = () => {
   return (
     <div className="bg-gray-50">
-      {/* Hero Section */}
+      
       <section className="relative h-screen">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
@@ -70,7 +70,7 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* Categories Section */}
+      
       <section className="py-16">
         <h2 className="text-3xl font-bold text-center mb-10">Shop by Category</h2>
         <motion.div
@@ -95,7 +95,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* Trending Products Section */}
+      
       <section className="py-16 bg-white">
         <h2 className="text-3xl font-bold text-center mb-10">Trending Now</h2>
         <motion.div
@@ -126,7 +126,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* Testimonials Section */}
+      
       <section className="py-16 bg-gray-100">
         <h2 className="text-3xl font-bold text-center mb-10">What Our Customers Say</h2>
         <motion.div
