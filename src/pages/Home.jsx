@@ -133,26 +133,32 @@ const Home = () => {
 
       
       <section className="py-16 bg-gray-100">
-        <h2 className="text-3xl font-bold text-center mb-10">What Our Customers Say</h2>
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto px-6"
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-        >
-          {reviews.map((review) => (
-            <motion.div
-              key={review.id}
-              className="bg-white p-6 rounded-lg shadow-md text-center"
-              variants={fadeInUp}
-              whileHover={{ scale: 1.05 }}
-            >
-              <p className="text-gray-600">"{review.text}"</p>
-              <h4 className="mt-4 font-semibold">- {review.customer}</h4>
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
+  <h2 className="text-3xl font-bold text-center mb-10">What Our Customers Say</h2>
+  <motion.div
+    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto px-6"
+    variants={staggerContainer}
+    initial="hidden"
+    animate="visible"
+  >
+    {reviews.map((review) => (
+      <motion.div
+        key={review.id}
+        className="bg-white p-6 rounded-lg shadow-md text-center"
+        variants={fadeInUp}
+        whileHover={{ scale: 1.05 }}
+      >
+        <img 
+          src={review.image} 
+          alt={review.customer} 
+          className="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-gray-300 object-cover"
+        />
+        <p className="text-gray-600">"{review.text}"</p>
+        <h4 className="mt-4 font-semibold">- {review.customer}</h4>
+      </motion.div>
+    ))}
+  </motion.div>
+</section>
+
     </div>
   );
 };

@@ -8,6 +8,9 @@ import  stylishImg from './stylish.jpg'
 import  jacketImg from './jacket.jpg'
 import  shoesImg from './shoes.jpg'
 import  elegantImg from './elegant.jpg'
+import  user1 from './profile_img_1.png'
+import  user2 from './profile_img_2.png'
+import  user3 from './profile-img.png'
 
 
 export const assets = {
@@ -20,7 +23,10 @@ export const assets = {
       elegantImg,
       shoesImg,
       jacketImg,
-      stylishImg
+      stylishImg,
+      user1,
+      user2,
+      user3
 
 }
 
@@ -49,8 +55,8 @@ export const sliderImages = [
   
 
   export const reviews = [
-    { id: 1, text: "Amazing quality! I'm in love with my new outfit.", customer: "Customer 1" },
-    { id: 2, text: "Fast delivery and great service!", customer: "Customer 2" },
-    { id: 3, text: "I highly recommend this store to everyone!", customer: "Customer 3" },
+    { id: 1, text: "Amazing quality! I'm in love with my new outfit.", customer: "Customer 1", image:assets.user1 },
+    { id: 2, text: "Fast delivery and great service!", customer: "Customer 2", image:assets.user2},
+    { id: 3, text: "I highly recommend this store to everyone!", customer: "Customer 3", image:assets.user3 },
   ];
   
