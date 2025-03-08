@@ -84,21 +84,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-16 bg-blue-500 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-        <p className="mb-6">Subscribe to get the latest fashion trends and offers.</p>
-        <div className="flex justify-center">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="px-4 py-3 rounded-l-lg w-72 text-gray-800 outline-none"
-          />
-          <button className="bg-black px-6 py-3 rounded-r-lg hover:bg-gray-900 transition">
-            Subscribe <FiArrowRight />
-          </button>
-        </div>
-      </section>
+     
     </div>
   );
 };
