@@ -20,7 +20,7 @@ export const CartProvider = ({ children }) => {
       } else {
         return [
           ...prevCart,
-          { ...product, quantity: 1, price: Number(product.price) } // Ensure price is a number
+          { ...product, quantity: 1, price: Number(product.price) } 
         ];
       }
     });

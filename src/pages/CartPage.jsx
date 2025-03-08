@@ -1,22 +1,23 @@
 import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import { FiTrash2 } from "react-icons/fi";
+import { assets } from "../assets/assets";
 
 const CartPage = () => {
   const { cart, addToCart, removeFromCart, decreaseQuantity, getTotalPrice } = useCart();
 
   return (
     <div>
-      {/* Hero Section */}
-      <div className="relative bg-cover bg-center h-64 flex items-center justify-center text-white text-center"
-        style={{ backgroundImage: "url('/images/cart-hero.jpg')" }}>
+   
+      <div className="relative bg-cover bg-center h-[300px] md:h-[400px] flex items-center justify-center text-white text-center"
+        style={{ backgroundImage: `url(${assets.cartImg})` }}>
         <div className="bg-black bg-opacity-50 px-6 py-8 rounded-lg">
           <h1 className="text-4xl font-bold">Your Shopping Cart</h1>
           <p className="mt-2 text-lg">Review your items and proceed to checkout</p>
         </div>
       </div>
 
-      {/* Cart Items */}
+   
       <div className="container mx-auto py-10 px-6">
         {cart.length === 0 ? (
           <p className="text-center text-gray-600 text-xl">Your cart is empty.</p>
@@ -52,7 +53,7 @@ const CartPage = () => {
           </div>
         )}
 
-        {/* Checkout Section */}
+    
         {cart.length > 0 && (
           <div className="mt-8 p-6 bg-gray-100 rounded-lg shadow-md text-center">
             <h3 className="text-xl font-semibold">Total: ${getTotalPrice().toFixed(2)}</h3>
