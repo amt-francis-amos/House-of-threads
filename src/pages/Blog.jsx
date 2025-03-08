@@ -4,18 +4,16 @@ import { blogPosts } from "../assets/assets";
 const Blog = () => {
   return (
     <div className="bg-gray-100">
-      {/* Hero Section */}
+   
       <section className="relative bg-pink-600 text-white py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto mt-20">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             Discover the Latest in Fashion
           </h1>
           <p className="mt-4 text-lg">
             Stay ahead with the newest trends, styling tips, and sustainable fashion insights.
           </p>
-          <button className="mt-6 px-6 py-3 bg-white text-pink-600 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition">
-            Explore Articles
-          </button>
+         
         </div>
       </section>
 
