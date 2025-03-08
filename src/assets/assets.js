@@ -13,6 +13,7 @@ import  user2 from './profile_img_2.png'
 import  user3 from './profile-img.png'
 import  shopImg from './shop-img.jpg'
 import  cartImg from './cart-img.jpg'
+import  abImg from './cart-img.jpg'
 
 
 
@@ -31,7 +32,9 @@ export const assets = {
       user2,
       user3,
       shopImg,
-      cartImg
+      cartImg,
+      aboutImg
+
 
 }
 

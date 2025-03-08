@@ -7,7 +7,7 @@ const About = () => {
     
       <section
         className="relative bg-cover bg-center h-[400px] flex items-center justify-center text-white text-center px-6"
-        style={{ backgroundImage: `url(${assets.elegantImg})` }}
+        style={{ backgroundImage: `url(${assets.aboutImg})` }}
       >
         <div className="bg-black bg-opacity-50 p-8 rounded-lg">
           <h1 className="text-4xl font-bold md:text-5xl">About Us</h1>
