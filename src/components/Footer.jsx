@@ -30,7 +30,7 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
           <p className="text-gray-400">Email: support@Houseofthreads.com</p>
           <p className="text-gray-400">Phone: +971529824652 | +19046662804</p>
-          <p className="text-gray-400">Location: Elmina, Ghana</p>
+          <p className="text-gray-400">Location: Dubai, UAE</p>
         </div>
 
         
