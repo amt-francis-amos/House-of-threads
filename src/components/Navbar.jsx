@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX, FiSearch, FiShoppingCart } from "react-icons/fi";
-import { products } from "../assets/assets"; // Ensure this contains product data
+import { products } from "../assets/assets"; 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = () => {
             onChange={handleSearch}
             className="bg-transparent outline-none text-gray-700 w-64"
           />
-          {/* Search Results Dropdown */}
+         
           {searchQuery && (
             <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded-lg mt-1">
               {filteredProducts.length > 0 ? (
@@ -60,7 +60,7 @@ const Navbar = () => {
                     key={product.id}
                     to={`/product/${product.id}`}
                     className="block px-4 py-2 hover:bg-gray-100 md:flex items-center"
-                    onClick={() => setSearchQuery("")} // Clear search on selection
+                    onClick={() => setSearchQuery("")} 
                   >
                     <img src={product.image} alt={product.name} className="w-10 h-10 mr-3 object-cover rounded-md" />
                     <span>{product.name}</span>
@@ -95,13 +95,13 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
+      
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+    
       {menuOpen && (
         <div className="md:hidden bg-white border-t shadow-md absolute w-full left-0 py-4">
           <div className="px-4">
@@ -112,7 +112,7 @@ const Navbar = () => {
               onChange={handleSearch}
               className="w-full bg-gray-100 px-3 py-2 rounded-lg outline-none"
             />
-            {/* Search Results Dropdown (Mobile) */}
+          
             {searchQuery && (
               <div className="absolute top-full left-0 w-full bg-white shadow-lg rounded-lg mt-1">
                 {filteredProducts.length > 0 ? (
