@@ -89,7 +89,7 @@ const Home = () => {
 
         
         <Link to={`/product/${product.id}`} className="block relative">
-          <img src={product.image} alt={product.name} className="rounded-lg w-full h-48 object-cover rounded-md" />
+          <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-md" />
           <motion.div className="p-4 bg-white text-center">
             <h3 className="text-xl font-semibold">{product.name}</h3>
             <p className="text-gray-600">${product.price}</p>
