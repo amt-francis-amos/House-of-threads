@@ -1,12 +1,18 @@
 import  heroImg from './hero_img.png'
 import  heroImg2 from './hero-img2.jpg'
 import  heroImg3 from './hero-img3.jpg'
+import  menImg from './men.jpg'
+import  womenImg from './women.jpg'
+import  accessImg from './accessories.jpg'
 
 
 export const assets = {
       heroImg,
       heroImg2,
-      heroImg3
+      heroImg3,
+      menImg,
+      womenImg,
+      accessImg
 }
 
 export const sliderImages = [
@@ -17,9 +23,9 @@ export const sliderImages = [
 
 
   export const categories = [
-    { name: "Men", image: "/men.jpg" },
-    { name: "Women", image: "/women.jpg" },
-    { name: "Accessories", image: "/accessories.jpg" },
+    { name: "Men", image:assets.menImg },
+    { name: "Women", image: assets.womenImg },
+    { name: "Accessories", image: assets.accessImg },
   ];
   
 

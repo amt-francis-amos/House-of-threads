@@ -48,7 +48,7 @@ const Home = () => {
           {categories.map((category) => (
             <Link to={`/shop/${category.name.toLowerCase()}`} key={category.name} className="relative group">
               <img src={category.image} alt={category.name} className="rounded-lg w-full h-72 object-cover" />
-              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition flex items-center justify-center text-white text-2xl font-semibold">
+              <div className="absolute inset-0 bg-black opacity-30 group-hover:bg-opacity-50 transition flex items-center justify-center text-white text-2xl font-semibold">
                 {category.name}
               </div>
             </Link>
