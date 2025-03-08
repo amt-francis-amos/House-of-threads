@@ -13,7 +13,7 @@ import  user2 from './profile_img_2.png'
 import  user3 from './profile-img.png'
 import  shopImg from './shop-img.jpg'
 import  cartImg from './cart-img.jpg'
-import  abImg from './cart-img.jpg'
+import  aboutImg from './about-img.jpg'
 
 
 
@@ -91,5 +91,37 @@ export const sliderImages = [
     { id: 1, text: "Amazing quality! I'm in love with my new outfit.", customer: "Customer 1", image:assets.user1 },
     { id: 2, text: "Fast delivery and great service!", customer: "Customer 2", image:assets.user2},
     { id: 3, text: "I highly recommend this store to everyone!", customer: "Customer 3", image:assets.user3 },
+  ];
+  
+
+
+
+
+
+  export const blogPosts = [
+    {
+      id: 1,
+      title: "Top 10 Fashion Trends for 2025",
+      description: "Discover the latest styles and trends that will dominate the fashion industry this year.",
+      image: "https://source.unsplash.com/600x400/?fashion,trendy",
+      author: "Emily Carter",
+      date: "March 8, 2025",
+    },
+    {
+      id: 2,
+      title: "How to Style Your Outfit Like a Pro",
+      description: "Learn expert fashion tips to enhance your wardrobe and elevate your style effortlessly.",
+      image: "https://source.unsplash.com/600x400/?style,clothing",
+      author: "David Mitchell",
+      date: "March 6, 2025",
+    },
+    {
+      id: 3,
+      title: "Sustainable Fashion: Why It Matters",
+      description: "Explore the importance of eco-friendly clothing and how sustainable fashion is shaping the future.",
+      image: "https://source.unsplash.com/600x400/?eco,fashion",
+      author: "Sophia Brown",
+      date: "March 4, 2025",
+    },
   ];
   
