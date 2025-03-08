@@ -4,14 +4,9 @@ import { Link } from "react-router-dom";
 
 const CategoryPage = () => {
   const { category } = useParams();
-
-  if (!products || !Array.isArray(products)) {
-    console.error("Products data is missing or not an array:", products);
-    return <p className="text-center text-red-500">Error loading products.</p>;
-  }
-
+  
   // Normalize category format
-  const formattedCategory = category?.replace(/-/g, " ").toLowerCase().trim() || "";
+  const formattedCategory = category.replace(/-/g, " ").toLowerCase().trim();
 
   console.log("Selected category:", formattedCategory);
 
