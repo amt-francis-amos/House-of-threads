@@ -98,32 +98,9 @@ const Home = () => {
       </section>
 
      
+    
+      
       <section className="py-16">
-        <h2 className="text-3xl font-bold text-center mb-10">Shop by Category</h2>
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 container mx-auto px-6"
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-        >
-         {categories.map((category) => (
-  <motion.div 
-    key={category.name} 
-    variants={fadeInUp} 
-    whileHover={{ y: -5, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)" }}
-    className="relative overflow-hidden rounded-lg transition"
-  >
-    <Link to={`/shop/${category.name.toLowerCase()}`} className="block relative">
-      <img src={category.image} alt={category.name} className="rounded-lg w-full h-72 object-cover" />
-      <motion.div className="absolute inset-0 bg-black/40 flex items-center justify-center text-white text-2xl font-semibold transition pointer-events-none">
-        {category.name}
-      </motion.div>
-    </Link>
-  </motion.div>
-))}
-
-        </motion.div>
-      </section><section className="py-16">
         <h2 className="text-3xl font-bold text-center mb-10">Shop by Category</h2>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-6 container mx-auto px-6"
