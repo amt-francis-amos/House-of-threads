@@ -86,8 +86,10 @@ const Home = () => {
         whileHover={{ y: -5, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.15)" }}
         className="relative overflow-hidden rounded-lg transition"
       >
+
+        
         <Link to={`/product/${product.id}`} className="block relative">
-          <img src={product.image} alt={product.name} className="rounded-lg w-full h-72 object-cover" />
+          <img src={product.image} alt={product.name} className="rounded-lg w-full h-48 object-cover rounded-md" />
           <motion.div className="p-4 bg-white text-center">
             <h3 className="text-xl font-semibold">{product.name}</h3>
             <p className="text-gray-600">${product.price}</p>
