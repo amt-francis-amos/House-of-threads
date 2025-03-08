@@ -2,15 +2,15 @@ import { useState, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX, FiSearch, FiShoppingCart } from "react-icons/fi";
 import { products } from "../assets/assets"; 
-import { useCart } from "../context/CartContext"; // ✅ Corrected Import
+import { useCart } from "../context/CartContext"; 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   const location = useLocation();
-  const { cart, getCartCount } = useCart(); // ✅ Use useCart instead of useContext(CartContext)
-
+  const { cart, getCartCount } = useCart(); 
+  
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Shop", path: "/shop" },
