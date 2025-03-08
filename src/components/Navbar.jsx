@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX, FiSearch, FiShoppingCart } from "react-icons/fi";
 import { products } from "../assets/assets"; 
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const location = useLocation();
   const { cart, getCartCount } = useCart(); 
-  
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Shop", path: "/shop" },
