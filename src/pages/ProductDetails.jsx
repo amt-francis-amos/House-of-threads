@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { products } from "../assets/assets"; // Ensure your products data is imported
+import { products } from "../assets/assets"; 
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -11,7 +11,7 @@ const ProductDetails = () => {
 
   return (
     <div className="container mx-auto px-6 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-20 gap-10">
         <img src={product.image} alt={product.name} className="w-full rounded-lg" />
         <div>
           <h1 className="text-3xl font-bold">{product.name}</h1>
